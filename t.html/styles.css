@@ -1,0 +1,543 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* head section */
+
+.head-section{
+    background-color: #F6EBDA;
+    display: flex;  /*  حالة العرض للكلاس */
+    flex-direction: column;
+    padding-bottom: 20em;
+    /* overflow: hidden; */
+}
+
+/* التنسيقات لشريط التنقلات  */
+.nav{
+    display: flex ;
+    flex-direction: row; /* شريط التنقلات و الشعار يكونان في صف واحد */
+    align-items: center;
+    padding: 2em 5em;
+}
+
+ /* التنسيق للشعار وهو الحجم فقط */
+ .logo{
+    width: 250px;
+}
+
+.head-menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0 10em;
+    position: relative;
+}
+
+/* menu and information تنسيقات لشريط التنقلات للكلمتين  */
+.head-menu-item-1{
+    font-size: 1.3em;
+    margin: .5em 1.5em; /* المحاذات */
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4); /* ظل لكل كلمة */
+    color: #FF902A;
+    text-decoration:underline;   /* لمنع ظهور خط تحت الكلمات  */
+    font-family: Arial, Helvetica, sans-serif;   /*  نوع الخط */
+    font-weight: bolder;
+}
+
+.head-menu-item-2{
+    font-size: 1.3em;
+    margin: .5em 1.5em; /* المحاذات */
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4); /* ظل لكل كلمة */
+    color: rgba(47, 33, 5, 1);
+    text-decoration:underline;   /* لمنع ظهور خط تحت الكلمات  */
+    font-family: Arial, Helvetica, sans-serif;   /*  نوع الخط */
+    font-weight: bolder;
+}
+
+/* service تنسيقات لشريط التنقلات للكلمة */
+.head-menu-item-active{
+    color: #FF902A;
+    font-size: 1.3em;
+    margin: .5em 1.5em; /* المحاذات */
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4); /* ظل لكل كلمة */
+    text-decoration: none;   /* لمنع ظهور خط تحت الكلمات  */
+    font-family: Arial, Helvetica, sans-serif;   /*  نوع الخط */
+}
+
+
+.head-info-div{
+    display: flex;
+    flex-direction: row;  /* عرض الصورة بصف */
+    padding: 1em 5em; /* المحاذات للنص الاول */
+}
+
+.head-info-div-left{
+    flex: 1;
+}
+
+ 
+/* تنسيقات النص الاول */
+.head-info-div-left-title{  
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    padding-top: 2em;
+}
+
+/* تنسيقات النص الثاني */
+.head-info-div-left-text{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(47, 33, 5, .4);
+    padding: 2em 0;
+}
+
+/* تنسيقات لكلمة coffee
+في اول نص */
+.orange-text{ 
+    color: #FF902A;
+}
+
+/* المقصود باليمين هو الصورة و تنسيقاتها */
+.head-info-div-right{
+    flex: 1;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+}
+
+/* للصورة ايضا */
+.head-info-div-right-image{
+    width: 35em; /* عرض الصورة او حجمها */
+    z-index: 2;  /*  bring to front  */   /* (تختفي) اذا كانت -1 راح تكوت تحت كل الطبقات */
+
+    position: relative; /*  top and bottom and left and right تابعة 
+    للposition
+     تحدد مكان الصورة */
+
+    top: 8px;
+   
+}
+
+.floating-top-right{
+    width: 30em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.floating-bottom-left{
+    width: 30em;
+    position: absolute;
+    left: 0;
+    bottom: 10em;
+    transform: rotateZ(180deg);
+    display: none;
+}
+
+/* body section */
+
+/* popular */
+
+/* للتقسيمات */
+.body-popular, .body-service{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 5em;
+    position: relative;
+    bottom: 10em;
+    font-weight: bolder;
+}
+
+/* popular and now تنسيق للكلمتين  */
+/*  */
+.body-head-title, .body-head-title-floot{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(47, 33, 5, 1);
+    font-weight: bold;    /* نوع الخط */
+    /* border-bottom: 3px solid transparent; */
+    padding-bottom: 2em;
+     font-weight: bolder; /*لتثخين النص*/
+
+}
+
+/* تنسيقات كلمة popular */
+.body-head-title-floot{
+    position: absolute;
+    top: -3.5em;
+}
+
+/* للخط البرتقالي تحت كلمة now */
+.orange-underline{
+    border-bottom: 5px solid #FF902A;
+}
+
+ /* التنسيق الخلفي للسكشن الثاني*/
+.body-beige-div, .body-beige-div-row{
+    background-color: #F9D9AA;
+    border-radius: 150px;  /* تحدد شكل المستطيل الخلفي */
+    position: relative;
+    height: 28em; /*  مهمه جدا تحدد ارتفاع الثلاث اعمده */
+}
+
+/* تسنيق الباك راوند للثلات ايتمات  */
+.body-beige-div-items-holder{
+    position: absolute; /* حتى يكون التلاث اعمده(صور المشروبات المشتهره في) خارخ المستطيل  */
+    display: flex;  /* حتى تكون الثلاث اعمده بشكل صفي */
+    flex-direction: row;
+    justify-content: space-between; /* حتى يكون اكو مسافة بين الثلاث اعمده  */
+    padding: 2em 7em;
+    bottom: 3em;
+}
+
+/* تنسيق الثلاث اعمده */
+.body-beige-item-div, .body-beige-item-div-special{
+    width: 26%;   /* حجم الصور */
+    background-color: white;
+    display: flex;
+    flex-direction:column ; /* للنص الملحق مع كل عامود */
+    align-items: center;  /* للصورة داخل كل عامود */
+    position: relative;  /* لمربع التقيمات مع النجمه الصغيرة */
+    padding: 2em 0;
+    border-radius: 20px;  /* حجم المربع الشامل لكل شيء */
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px 0 rgba(0, 0, 0, .3);
+    text-decoration: none;
+    bottom: 0;
+    transition: bottom .25s;
+}
+
+/* item الحركه لل  */
+.body-beige-item-div:hover, .body-beige-item-div-special:hover{
+    bottom: 7px;
+}
+
+/* مهمه */
+.body-beige-item-image{
+    width: 90%;
+    border-radius: 20px;
+}
+ 
+/* لتنسيق مربع التقيمات مع النجمة الصغيرة */
+.body-beige-item-rate-div{
+    position: absolute;   /* حتى تخلي التقيمات مع النجمة الصغيرة في الاعلى */
+    background-color: #FFFFFF; /*  لون مربع التقيمات */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .2em .7em;
+    border-radius: 50px; /* للنجمات */
+    left: 2em;
+    top: 3em;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, .7);
+}
+
+/* 4.8 لتنسيق نص التقيمات  */
+.body-beige-item-rate-num{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: .8em;
+    color: rgba(47, 33, 5, 1);
+}
+
+/* تنسيق حجم النجمة */
+.body-beige-item-star{
+    width: 16px;
+}
+
+/* تنسيق النص داخل الاعمده الثلاثة */
+.body-beige-item-title-holder{
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    display: flex;
+    flex-direction: row;    /*  حتى يكون اسم المنتج و السعر بشكل صفي */
+    justify-content: space-between;
+    font-weight: bold;
+    padding: .5em;
+}
+
+/* لون النص */
+.body-beige-item-title{
+    color: rgba(47, 33, 5, 1);
+}
+
+/*  لتنسيق مربع العام خلف السكشنات */
+.body-beige-item-info-div{
+    display:flex;
+    width: 70%;
+    margin-right: 75px;   /* و النص تحت الصور cold لتحديد اتجاه المربع  */
+    text-align:center;
+    border: 3px solid rgba(255, 144, 42, 1);  /* حديد لون للمربع */
+    color: rgba(255, 144, 42, 1);  /* تحدد لون النص داخل المربع */
+    padding: .5em 1em;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 17px;  /* شكل المربع */
+} 
+
+
+
+/* service */
+/* .body-beige-div-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:  2em 10em;
+    height: auto;
+}
+.body-beige-service-item-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+}
+.body-beige-service-item-image{
+    width: 12em;
+    margin-bottom: 1em;
+}
+.body-beige-service-item-title{
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body-beige-service-item-text{
+    font-size: .9em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ */
+
+
+/* special menu */
+.body-special, .body-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:  4em 10em;
+    background-color: rgba(246, 235, 218, 1);
+    position: relative;
+    margin-bottom: 10em;
+}
+.special-title{
+    position: absolute;
+    top: -1.2em;
+    left: 3em;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(47, 33, 5, 1);
+    background-color: rgba(246, 235, 218, 1);
+    padding: .5em 1em;
+    border: 1px solid rgba(255, 144, 42, 1);
+    border-radius: 30px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2);
+}
+
+
+.special-items-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* مسافة بين كل عامود */
+    align-items: center;
+    flex-wrap: wrap;  /* حتى تخلي كل العمواميد بشكل متعاقب  */
+}
+
+/* لخلق مسافه بين كل سطر من المينيو */
+.body-beige-item-div-special{
+    width: 30%;
+    margin-bottom: 3em;
+}
+
+/* تنسيق الوصف لكل مشروب */
+.body-beige-item-details{
+    font-size: 1.1em;
+  text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #a9a9a9;
+}
+
+
+/* info */
+.body-info{
+    background-image: url(images/coffee-cup-bg.svg);
+    background-blend-mode: soft-light;
+    margin-bottom: 0;
+}
+
+.info-big-title{
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(47, 33, 5, 1);
+    margin-bottom: 1em;
+}
+.info-small-title{
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(47, 33, 5, 1);
+    margin-bottom: 1em;
+}
+.info-text{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(47, 33, 5, .4);
+    padding: 2em 0;
+}
+.body-info-location-div{
+    display: flex;
+    flex-direction: row;
+}
+.body-info-location-image{
+    flex: 1;
+    padding: 1em;
+}
+.body-info-location-info-div{
+    flex: 1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body-info-location-title-holder{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0;
+}
+.body-info-location-icon{
+    padding: 0 .5em;
+}
+.body-info-location-text{
+    padding: 0 .5em;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, .4);
+}
+.body-info-location-details{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+*,
+*::after,
+*::before{
+ box-sizing:border-box;
+}
+
+body{
+   /*  padding:0;
+   margin:0; */
+font-family:  Arial, Helvetica, sans-serif;
+	/* font-size: 30px; */
+    color:#000021;
+    background-color: #e6e6e6ef;
+}
+
+
+
+/* radio تنسيق   */
+
+.dis {
+    flex-direction: row; 
+    display: inline-block;
+    margin-right: 10px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+input[type="radio"]{
+    display:none;
+}
+
+label{
+    display:block;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+label span{
+    display:inline-block;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    border-radius: 31px;
+    transition: .25s ease;
+}
+
+label span:hover,
+    input[type="radio"]:checked+span{
+    background-color: rgba(255, 144, 42, 1);
+}
+
+/* anas */
+
+/* .back-to-top{
+    font-size: 1em;
+    text-decoration: none;
+    background-color: rgba(255, 144, 42, 1);
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2em;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+} */
+
+    .btn{
+   padding:1em 2em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;  /*  تحت النص underline حتى لا يكون   */
+    border-radius: 1000px;   /* الشكل الاسطواني */
+    background-color: #a9a9a9;
+    color: white;
+	font-family: system-ui;
+
+    /* for after pointing */
+	position:absolute;
+    left: 15%;
+    bottom: 10px;
+    display: flex;
+     /*  */
+
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    }
+
+    .btn::after{
+    content: ''; 
+    position: absolute;
+   height:100%;
+   width: 100%;
+   border-radius:1000px;
+   background-image: linear-gradient(to bottom right,#ff9900,#ff3c00);
+   z-index: -1;
+    } 
+	
+    .btn:hover{
+        z-index: 0;
+        box-shadow: 40px 0 100px #ff99009d, -40px 0 100px #ff3c009d;
+    }
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
+    .body-beige-div-row{
+        padding: 0;
+    }
+    .body-info-location-image{
+        width: 0%;
+    }
+}

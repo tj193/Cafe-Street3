@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!--  web site التاتيل هو اسم للصفحة  -->
+        <title>Cafe Street Menu</title>
+
+        <!-- css لينك لجلب كل تنسيقات  -->
+        <link rel="stylesheet" href="styles.css" />
+
+    
+
+
+    <body>
+        <section id="head" class="head-section">
+            <nav class="nav">
+                <a href="index.html">
+
+                    <!-- صورة لشعار الكافية -->
+                    <img src="images/logo_coffe.svg" alt="logo" class="logo" />
+                </a>  
+
+                <!-- شريط التنقلات  -->
+                <ul class="head-menu">
+                   <!--  <li><a href="#service" class="head-menu-item-active">Service</a></li> -->
+                    <li><a href="#menu" class="head-menu-item-1">Menu</a></li>
+                    <li><a href="#info" class="head-menu-item-2">About As</a></li>
+                </ul>
+            </nav>
+
+            <!-- اول نص في الموقع -->
+            <div class="head-info-div">
+                <div class="head-info-div-left">
+                    <h1 class="head-info-div-left-title">Enjoy your <span class="orange-text">coffee</span><br>before your activity</h1>
+                    <p class="head-info-div-left-text">Boost your productivity and build your<br>mood with a glass of coffee in the morning</p>
+                </div>
+
+                 <!-- صورة كوب القهوة ثاني صورة في الموقع من بعد الشعار -->
+                <div class="head-info-div-right">
+                    <img src="images/img-hero.png" alt="big image" class="head-info-div-right-image" />
+                </div>
+
+            </div>
+
+             <!-- الصورة الثالثة في الموقع (هي مجموعة بها صورتان) -->
+            <img src="images/bg_img_hero.svg" alt="coffee beens" class="floating-top-right" />  <!-- صورة حبيبات القهوة -->
+            <img src="images/bg_img_hero.svg" alt="coffee beens" class="floating-bottom-left" /> <!--صورة حبيبات القهوة الثانية --> 
+        </section>
+
+ 
+         <!-- السكشن الثاني في الموقع  -->
+        <section class="body-popular">
+            <p class="body-head-title-floot">Popular <span class="orange-underline">Now</span></p>  <!-- هنا مستخدمة ثلاث كلاسات-->
+            
+            
+            <!-- لعمود شاي النعناع -->
+            <div class="body-beige-div">
+                <div class="body-beige-div-items-holder">
+                    <a href="item.html" class="body-beige-item-div">
+                        <img src="images/mint.jpg" alt="coffee cup" class="body-beige-item-image" />
+                        
+                        <div class="body-beige-item-rate-div">
+                            <p class="body-beige-item-rate-num">4.8</p>
+                            <img src="images/star.webp" alt="star" class="body-beige-item-star" />
+                        </div>
+                        <div class="body-beige-item-title-holder">
+                            <p class="body-beige-item-title"> Mint Tea </p>
+                            <p class="body-beige-item-text orange-text">6.0IQD</p>
+                        </div>
+
+                        <div>
+                            <span class="body-beige-item-details">Hot Tea, Mint And Mineral Water.</span>
+                        </div>
+                    </a>
+
+                    <!-- لعمود الاسبريسو -->
+                    <a href="item.html" class="body-beige-item-div">
+                        <img src="images/esper.jpg " alt="coffee cup" class="body-beige-item-image" />
+                        <div class="body-beige-item-rate-div">
+                            <p class="body-beige-item-rate-num">4.5</p>
+                            <img src="images/star.webp" alt="star" class="body-beige-item-star" />
+                        </div>
+                        <div class="body-beige-item-title-holder">
+                            <p class="body-beige-item-title">Espresso Coffee</p>
+                            <p class="body-beige-item-text orange-text">5.5IQD</p>
+                        </div>
+
+                       
+                        <div>
+                            <span class="body-beige-item-details"> Coffee And Hot Water.</span>
+                        </div>
+                       
+                    </a>
+
+                    <!-- cappuccino لعمود ال  -->
+                    <a href="item.html" class="body-beige-item-div">
+                        <img src="images/cappuccino.jpg" alt="coffee cup" class="body-beige-item-image" />
+                        <div class="body-beige-item-rate-div">
+                            <p class="body-beige-item-rate-num">4.5</p>
+                            <img src="images/star.webp" alt="star" class="body-beige-item-star" />
+                        </div>
+
+                        <div class="body-beige-item-title-holder">
+                            <p class="body-beige-item-title">Cappuccino</p>
+                            <p class="body-beige-item-text orange-text">7.0IQD</p>
+                        </div>
+
+                        <div>
+                            <span class="body-beige-item-details">Espresso Coffee, Milk And Foam.</span>
+                        </div>
+                        
+                       <!--  <div>
+                            <span class="body-beige-item-info-div">Flavors</span>
+                        </div>
+                        <div>
+                            <span class="body-beige-item-info-div">Hot</span>
+                        </div>
+
+ -->
+                    </a>
+                </div>
+            </div>
+        </section>      
+             <!-- نهاية الثلاث اعمده -->
+
+
+             
+         <!-- السكشن الثاني في الموقع -->
+       <!--   <section id="service" class="body-service">
+            <p class="body-head-title">How to use delivery <span class="orange-underline">service</span></p>
+            <div class="body-beige-div-row">
+                <div class="body-beige-service-item-div">
+                    <img src="images/coffee-cup-hand.svg" alt="choose your coffee" class="body-beige-service-item-image" />
+                    <p class="body-beige-service-item-title">choose your coffee</p>
+                    <p class="body-beige-service-item-text">there are 5+ coffees for you</p>
+                </div>
+                <div class="body-beige-service-item-div">
+                    <img src="images/food-truck.svg" alt="we delivery it to you" class="body-beige-service-item-image" />
+                    <p class="body-beige-service-item-title">we delivery it to you</p>
+                    <p class="body-beige-service-item-text">choose delivery service</p>
+                </div>
+                <div class="body-beige-service-item-div">
+                    <img src="images/coffee-cup.svg" alt="enjoy your coffee" class="body-beige-service-item-image" />
+                    <p class="body-beige-service-item-title">enjoy your coffee</p>
+                    <p class="body-beige-service-item-text">choose delivery service</p>
+                </div>
+            </div>
+        </section> -->
+
+
+</head>
+
+<body>
+        <!-- السكشن الثالث في الموقع -->
+        <section id="menu" class="body-special">
+            <p class="special-title">Our Special Menu</p>
+            <div class="special-items-holder">
+                <div class="body-beige-item-div-special">
+                    
+                 <!-- اول شغله في المينيو -->
+                    <img src="images/amer.jpg" alt="Iced Americano Cup" class="body-beige-item-image" />
+                    <div class="body-beige-item-rate-div">
+                        <p class="body-beige-item-rate-num">4.8</p>   <!--  التقيم من 5 -->
+                        <img src="images/star.webp" alt="" class="body-beige-item-star" />
+                    </div>
+                    <div class="body-beige-item-title-holder">
+                        <p class="body-beige-item-title"> Americano Cup</p>
+                        <p class="orange-text">6.0IQD</p>
+                    </div>
+
+                    <div>
+                        <span class="body-beige-item-details">Americano coffee, Water And Sugar.</span>
+                    </div>
+
+                    <!-- radio هذا القسم سيكون مخصص لتنسيق ال  -->
+                    <div class="dis">
+                        <label>
+                        <input type="radio" name="ch1" id="Cold" /> 
+                    <span>Cold</span>
+                    </label>
+
+                    <label>
+                         <input type="radio" name="ch1" id="Hot" checked />
+                         <span>Hot</span>
+                        </label>
+                    </div>
+                    <!-- radio نهاية تنسيق ال    -->
+                     
+                </div>
+                 
+                <!-- ثاني شغله في المينيو -->
+                <div class="body-beige-item-div-special">
+                    <img src="images/esper.jpg" alt="Espresso coffee" class="body-beige-item-image" />
+                    <div class="body-beige-item-rate-div">
+                        <p class="body-beige-item-rate-num">4.5</p>
+                        <img src="images/star.webp" alt="" class="body-beige-item-star" />
+                    </div>
+                    <div class="body-beige-item-title-holder">
+                        <p class="body-beige-item-title">Espresso Coffee</p>
+                        <p class="orange-text">5.5IQD</p>
+                    </div>
+
+                    <div>
+                        <span class="body-beige-item-details">Fine Ground Coffee And Hot Water.</span>
+                    </div>
+
+                    <div class="dis">
+                        <label>
+                        <input type="radio" name="ch2" id="Cold" /> 
+                    <span>Cold</span>
+                    </label>
+
+                    <label>
+                         <input type="radio" name="ch2" id="Hot" checked />
+                         <span>Hot</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <!-- ثالث شغله في المينيو -->
+                <div class="body-beige-item-div-special">
+                    <img src="images/cappuccino.jpg" alt="Cappuccino cup" class="body-beige-item-image" />
+                    <div class="body-beige-item-rate-div">
+                        <p class="body-beige-item-rate-num">4.5</p>
+                        <img src="images/star.webp" alt="" class="body-beige-item-star" />
+                    </div>
+                    <div class="body-beige-item-title-holder">
+                        <p class="body-beige-item-title">Cappuccino</p>
+                        <p class="orange-text">8.0IQD</p>
+                    </div>
+                   
+                    <div>
+                        <span class="body-beige-item-details">Espresso Coffee, Milk And Foam.</span>
+                    </div> <br>
+
+                    <div class="dis">
+                        <label>
+                        <input type="radio" name="ch3" id="Cold" /> 
+                    <span>Cold</span>
+                    </label>
+
+                    <label>
+                         <input type="radio" name="ch3" id="Hot" checked />
+                         <span>Hot</span>
+                        </label>
+                    </div>
+
+            </div>
+
+                <!-- رابع شغله في المينيو -->
+                <div class="body-beige-item-div-special">
+                    <img src="images/latte.jpg" alt="coffee cup" class="body-beige-item-image" />
+                    <div class="body-beige-item-rate-div">
+                        <p class="body-beige-item-rate-num">3.2</p>
+                        <img src="images/star.webp" alt="" class="body-beige-item-star" />
+                    </div>
+                    <div class="body-beige-item-title-holder">
+                        <p class="body-beige-item-title">Latte Machiato coffee</p>
+                        <p class="orange-text">4.0IQD</p>
+                    </div>
+
+                    <div>
+                        <span class="body-beige-item-details">Espresso And Steamed Milk.</span>
+                    </div>
+
+                    <div class="dis">
+                        <label>
+                        <input type="radio" name="ch4" id="Cold" /> 
+                    <span>Cold</span>
+                    </label>
+
+                    <label>
+                         <input type="radio" name="ch4" id="Hot" checked />
+                         <span>Hot</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <!-- خامس شغله في المينيو -->
+                <div class="body-beige-item-div-special">
+                    <img src="images/mocha.jpg" alt="coffee cup" class="body-beige-item-image" />
+                    <div class="body-beige-item-rate-div">
+                        <p class="body-beige-item-rate-num">4.0</p>
+                        <img src="images/star.webp" alt="" class="body-beige-item-star" />
+                    </div>
+                    <div class="body-beige-item-title-holder">
+                        <p class="body-beige-item-title">Mocha Coffee</p>
+                        <p class="orange-text">5.5IQD</p>
+                    </div>
+
+                    <div>
+                        <span class="body-beige-item-details">Espresso, Chocolate, Milk, And Ice.</span>
+                    </div>
+
+                    <div class="dis">
+                        <label>
+                        <input type="radio" name="ch5" id="Cold" /> 
+                    <span>Cold</span>
+                    </label>
+
+                    <label>
+                         <input type="radio" name="ch5" id="Hot" checked />
+                         <span>Hot</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                 <!-- سادس شغله في المينيو -->
+                <div class="body-beige-item-div-special">
+                    <img src="images/span.jpg" alt="coffee cup" class="body-beige-item-image" />
+                    <div class="body-beige-item-rate-div">
+                        <p class="body-beige-item-rate-num">3.6</p>
+                        <img src="images/star.webp" alt="" class="body-beige-item-star" />
+                    </div>
+                    <div class="body-beige-item-title-holder">
+                        <p class="body-beige-item-title">Spanish Latte</p>
+                        <p class="orange-text">5.5IQD</p>
+                    </div>
+
+                    <div>
+                        <span class="body-beige-item-details">Espresso, Ice And Milk</span>
+                    </div>
+
+                    <div class="dis">
+                        <label>
+                        <input type="radio" name="ch6" id="Cold" /> 
+                    <span>Cold</span>
+                    </label>
+
+                    <label>
+                         <input type="radio" name="ch6" id="Hot" checked />
+                         <span>Hot</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                 <!-- سابع شغله في المينيو -->
+                <div class="body-beige-item-div-special">
+                    <img src="images/karak.jpg" alt="coffee cup" class="body-beige-item-image" />
+                    <div class="body-beige-item-rate-div">
+                        <p class="body-beige-item-rate-num">3.9</p>
+                        <img src="images/star.webp" alt="" class="body-beige-item-star" />
+                    </div>
+                    <div class="body-beige-item-title-holder">
+                        <p class="body-beige-item-title">Karak Tea</p>
+                        <p class="orange-text">3.0IQD</p>
+                    </div>
+
+                    <div>
+                        <span class="body-beige-item-details"> Hot Black Tea, Milk, Sugar, And Spices.</span>
+                    </div>
+
+                </div>
+
+                 <!-- ثامن شغله في المينيو -->
+                <div class="body-beige-item-div-special">
+                    <img src="images/green.jpg" alt="coffee cup" class="body-beige-item-image" />
+                    <div class="body-beige-item-rate-div">
+                        <p class="body-beige-item-rate-num">3.0</p>
+                        <img src="images/star.webp" alt="" class="body-beige-item-star" />
+                    </div>
+                    <div class="body-beige-item-title-holder">
+                        <p class="body-beige-item-title">Green Tea</p>
+                        <p class="orange-text">2.0IQD</p>
+                    </div>
+
+                    <div>
+                        <span class="body-beige-item-details">Hot Green Tea And Mineral Water</span>
+                    </div>
+
+                </div>
+
+                 <!-- تاسع شغله في المينيو -->
+                <div class="body-beige-item-div-special">
+                    <img src="images/mint.jpg" alt="coffee cup" class="body-beige-item-image" />
+                    <div class="body-beige-item-rate-div">
+                        <p class="body-beige-item-rate-num">4.8</p>
+                        <img src="images/star.webp" alt="" class="body-beige-item-star" />
+                    </div>
+                    <div class="body-beige-item-title-holder">
+                        <p class="body-beige-item-title">Mint Tea</p>
+                        <p class="orange-text">2.0IQD</p>
+                    </div>
+
+                    <div>
+                        <span class="body-beige-item-details">Hot Tea, Mint And Mineral Water</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <footer>
+        <section id="info" class="body-info">
+            <p class="special-title">About  <span class="orange-underline"> Us </span></p>
+            <div class="body-info-info">
+                <!-- <p class="info-big-title">Aboud <span class="orange-underline">Us</span></p> -->
+                <p class="info-small-title">We provide quality coffee.</p>
+                <p class="info-text">
+                    we are a company that motes ond distributes delicious ainkes.<br>
+                     our main product is made with a secret recipe ond available in stores worldwide Our
+                </p>
+            </div>
+            <div class="body-info-location-div">
+                <img src="images/map.svg" alt="map" class="body-info-location-image" />
+                <div class="body-info-location-info-div">
+                    <p class="body-info-location-title-holder">
+                        <img src="images/location.svg" alt="location" class="body-info-location-icon" />
+                        <span class="body-info-location-text">Our Location</span>
+                    </p>
+                    <p class="body-info-location-details">Baghdad Al-Rusafa<br>Al-Mustansiriya  University, Palestine Street</p>
+                    <p class="body-info-location-title-holder">
+                        <img src="images/clock.svg" alt="clock" class="body-info-location-icon" />
+                        <span class="body-info-location-text">Working Hours</span>
+                    </p>
+                    <p class="body-info-location-details">from 8AM to 10PM</p>
+                </div>
+            </div>
+
+          <br>
+          <br>
+             <!-- hyperlink - type : relative path -->
+            <a href="#head" class="btn">Back To Top</a>
+
+        </section>
+
+        <br>
+        <br>
+
+    </footer>
+</html>
